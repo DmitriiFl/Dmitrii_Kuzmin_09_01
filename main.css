@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery {
+    width: 72%;
+}
+.title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+.select-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+select, select option {
+    text-transform: capitalize;
+}
+.movies-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie-item {
+    width: 19%;
+    text-align: center;
+    margin-bottom: 16px;
+    position: relative;
+}
+.movie-item>img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 36px;
+}
+.image-container {
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    height: 15vw;
+    margin-bottom: 8px;
+}
+.movie-item-name, .movie-item-year {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.favorite-list {
+    width: 17%;
+    /*height: 100px;*/
+    /*background-color: aquamarine;*/
+}
+.list-ul {
+    list-style: none;
+}
+.list-ul li {
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-ul li:last-of-type {
+    border-bottom: none;
+}
+.list-ul img {
+    width: 20px;
+}
+
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    font-weight: 300;
+    width: 80%;
+    max-width: 980px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+    display: flex;
+    justify-content: space-between;
+}
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+.modal-side {
+    width: 30%;
+    text-align: center;
+}
+.modal-img img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.modal-year {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.modal-genres {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+.modal-main {
+    width: 68%;
+}
+.modal-name {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.modal-director, .modal-description, .modal-starring {
+    margin-bottom: 24px;
+}

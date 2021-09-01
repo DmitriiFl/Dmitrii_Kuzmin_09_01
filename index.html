@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>ProgForce</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <div class="gallery">
+            <div class="title">movies gallery</div>
+            <div class="select-container">
+                <label for="genre_select">Select genre: </label>
+                <select name="genre_select" id="genre_select"></select>
+            </div>
+
+            <div class="movies-table">Data is loading now, please wait</div>
+        </div>
+        <div class="favorite-list">
+            <div class="title">favorite list</div>
+            <div class="list"></div>
+        </div>
+    </div>
+    <div class="modal">
+        <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+        </svg>
+        <div class="modal-side"></div>
+        <div class="modal-main"></div>
+    </div>
+    <div class="overlay"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
